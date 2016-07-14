@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
   def welcome
-  	"hallo"
+  end
+
+  def sign_in
+  end
+
+  def sign_up
   end
 end
