@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20160713132048) do
   create_table "candidates", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "name"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -38,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160713132048) do
   create_table "companies", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "name"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -56,7 +58,7 @@ ActiveRecord::Schema.define(version: 20160713132048) do
   create_table "jobs", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
-    t.integer  "budget"
+    t.integer  "wage"
     t.string   "location"
     t.boolean  "expired",     default: false
     t.datetime "created_at"

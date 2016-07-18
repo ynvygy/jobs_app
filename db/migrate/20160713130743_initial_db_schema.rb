@@ -3,7 +3,7 @@ class InitialDbSchema < ActiveRecord::Migration
   	create_table :jobs do |t|
   		t.string :name
   		t.text :description
-  		t.integer :budget
+  		t.integer :wage
   		t.string :location
   		t.boolean :expired, default: false
   		t.timestamps
